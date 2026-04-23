@@ -1,0 +1,9 @@
+name: Function Test Workflow
+on:
+  push:
+jobs:
+  function-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Function Tests
+        run: node ../../index.js
