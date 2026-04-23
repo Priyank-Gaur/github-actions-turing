@@ -5,5 +5,7 @@ jobs:
   function-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Repo Clone
+        run: actions/checkout@v4
       - name: Run Function Tests
-        run: node ../../index.js
+        run: node index.js
